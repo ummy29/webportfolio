@@ -1,0 +1,252 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/jumbuotron.jpg);
+    background-size: cover;
+    height: 50px;
+    margin-top: -150px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+    top: 106px;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+
+}
+
+.jumbotron .display-4{
+    margin-top: auto;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 40px;
+    top: 50%;
+    bottom: 50%;
+}
+
+.jumbotron .display-4 span {
+font-weight: 500;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* Info Panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0,0,0,0,5);
+    border-radius: 12px;
+    margin-top: -50px;
+    background-color: white;
+    z-index: 1;
+    padding: 30px;
+}
+
+.info-panel img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+.info-tengah{
+    /* fix */
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    /* fix */
+    margin-left: 0; 
+    
+}
+
+/* Workingspace */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 52px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+.workingspace h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* carousel */
+.carousel img {
+    height: 540px;
+}
+
+/* contact */
+.profile img {
+    width: 250px;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: end;
+}
+
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+.footer p{
+    color: #ACACAC;
+    font-size: 18px;
+    
+}
+/* akhir navbar */
+
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* DEDSKTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+.jumbotron {
+    margin-top: -75px;
+    height: 640px;
+}
+
+.jumbotron .display-4 {
+    font-size: 62px;
+}
+
+
+}/* DESKTOP VERSION */
+@media (min-width: 992px) {
+ 
+    .nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+    }
+    
+    
+
+
+    .nav-link:hover::after{
+        content : '';
+        display: block;
+        border-bottom: 3px solid #0863DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -75px;
+        padding-top: 75px;
+        height: 640px; 
+    }
+    .jumbotron .container{
+        position: relative;
+        z-index: 1;
+        top: 0px;
+    }
+    .jumbotron .display-4{
+        font-size: 65px;
+    }
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .jumbotron.display-4{
+        font-size: 62px;
+    }
+    .workingspace h3{
+        text-align: left;
+    }
+    /* testimonial */
+    
+    
+    .info-tengah{
+        /* fix */
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        /* fix */
+        margin-left: 0; 
+        
+    }
+    
+    .testimonial h5{
+        font-style: 32;
+    }
+}
+
